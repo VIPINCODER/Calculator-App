@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+
+            <input type="text" id="display" disabled>
+            <button class="delete-button" onclick="del()"> <img src="delete.png" alt="DEL"></button>
+            <button class="btn yellow" onclick="clearDisplay()">C</button>
+            <button class="btn yellow" onclick="num('()')">()</button>
+            <button class="btn yellow" onclick="num('%')">%</button>
+            <button class="btn yellow" onclick="num('/')">/</button>
+            <br>
+            <button class="btn1 col" onclick="num('7')">7</button>
+            <button class="btn1 col" onclick="num('8')">8</button>
+            <button class="btn1 col" onclick="num('9')">9</button>
+            <button class="btn1 yellow" onclick="num('*')">X</button>
+            <br>
+            <button class="btn2 col" onclick="num('4')">4</button>
+            <button class="btn2 col" onclick="num('5')">5</button>
+            <button class="btn2 col" onclick="num('6')">6</button>
+            <button class="btn2 yellow" onclick="num('-')">-</button>
+            <br>
+            <button class="btn3 col" onclick="num('1')">1</button>
+            <button class="btn3 col" onclick="num('2')">2</button>
+            <button class="btn3 col" onclick="num('3')">3</button>
+            <button class="btn3 yellow" onclick="num('+')">+</button>
+            <br>
+            <button class="btn4 col" onclick="num('00')">00</button>
+            <button class="btn4 col" onclick="num('0')">0</button>
+            <button class="btn4 col" onclick="num('.')">.</button>
+            <button class="btn4 yellow" onclick="cal('=')">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
